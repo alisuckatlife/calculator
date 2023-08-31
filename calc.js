@@ -19,6 +19,12 @@ let answers = await inquirer.prompt([{
 if (answers.operater == "Add") {
     console.log(answers.n1 + answers.n2);
 }
-//else if (answers.operater=="Add"){
-//    console.log(answers.n1+answers.n2)
-//}
+else if (answers.operater == "Sub") {
+    console.log(answers.n1 - answers.n2);
+}
+else if (answers.operater == "Mul") {
+    console.log(answers.n1 * answers.n2);
+}
+else if (answers.operater == "Div") {
+    console.log(answers.n1 / answers.n2);
+}
